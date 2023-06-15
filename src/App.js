@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   const handleClick = () => {
@@ -18,9 +17,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header" onClick={handleClick}>
-        Crypto Heat Wave
-      </header>
+      <a href="/next-screen" onClick={handleClick}>
+        <header className="App-header">
+          Crypto Heat Wave
+        </header>
+      </a>
       <video id="video" style={{ display: 'none' }} controls>
         <source src="heatwave.mp4" type="video/mp4" />
       </video>
